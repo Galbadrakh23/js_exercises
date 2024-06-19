@@ -95,29 +95,23 @@ console.log("Нийлбэр нь:", sum2);
 
 console.log("========6=======");
 
-function findFirstnumber(n) {
-  if (n <= 1) {
-    return false;
-  }
-  if (n === 2) {
-    return true;
-  }
-  if (n % 2 === 0) {
-    return false;
-  }
-  for (let i = 3; i * i <= n; i + 2) {
-     if (num % i ==== 0) }
-}
-
 console.log("========7=======");
+function isPalindrome(number) {
+  let str = number.toString();
 
+  let left = 0;
+  let right = str.length - 1;
 
+  while (left < right) {
+    if (str[left] !== str[right]) {
+      return false;
+    }
+    left++;
+    right--;
+  }
 
-
-
-
-
-
-
+  return true;
+}
+console.log(isPalindrome(121));
 
 console.log("========8=======");
