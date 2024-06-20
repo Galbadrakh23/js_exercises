@@ -65,6 +65,7 @@ function highestPay(companyData) {
   let workers = companyData.employees;
   let maxSalary = workers.salary;
   let maxSalaryName = "";
+
   for (let i = 0; i < workers.length; i++) {
     if (workers[i].salary > maxSalary) {
       maxSalaryName = workers[i].salary;
