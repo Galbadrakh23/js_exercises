@@ -70,19 +70,19 @@ console.log(createdArray);
 // console.log(result);
 
 // Exercise -4-
-
 let words = "the quick brown fox";
 
-function letterToUppercase(con) {
-  let letter = words.split(" ");
-  console.log(letter);
-  const firstElement = letter.shift();
-  console.log(letter);
-  console.log(firstElement);
+function firstLettersUp(str) {
+  let words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+  }
 
-  for (let i = 0; i < words.length; i++) {}
+  return words.join(" ");
 }
-let result = letterToUppercase(words);
+
+let capitalizedWords = firstLettersUp(words);
+console.log(capitalizedWords);
 
 // Exercise -5-
 // input: ['hello', 'world', 'javascript', 'array']
@@ -102,4 +102,17 @@ function reverseArray(putArray) {
   return r;
 }
 
-reverseArray(textArr);
+let ra = reverseArray(textArr);
+console.log(textArr);
+console.log(ra);
+
+// Exercise -6-
+
+function wordExistIntext(text) {
+  let keyword = prompt("Та хайлт хийх утга оруулна уу");
+  return text.includes(keyword);
+}
+
+let text = "animal world";
+let result3 = wordExistIntext(text);
+console.log(result3);
