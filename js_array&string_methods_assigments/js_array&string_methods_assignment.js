@@ -116,3 +116,31 @@ function wordExistIntext(text) {
 let text = "animal world";
 let result3 = wordExistIntext(text);
 console.log(result3);
+
+// Exercise -7-
+
+const data = [
+  {
+    productName: "Bakery",
+    unitPrice: 5000,
+    amount: 200,
+    totalPrice: 500000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+
+  {
+    productName: "Chocolate",
+    unitPrice: 3000,
+    amount: 18,
+    totalPrice: 54000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+];
+
+function totalAmount() {}
+
+// Exercise --
+
+function numberToSort() {}
