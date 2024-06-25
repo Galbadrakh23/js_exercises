@@ -44,7 +44,9 @@
 
 // =================HM==========================
 
-const innerBoxes = document.getElementsByClassName("inner-box");
+const insideBoxes = document.getElementsByClassName("inside-box");
+
+console.log(insideBoxes);
 
 const btnEL = document.getElementsByClassName("btn")[0];
 
@@ -59,9 +61,45 @@ function generateColor() {
 
 function changeBackgroundColor() {
   console.log("changed");
-  for (let i = 0; i < innerBoxes.length; i++) {
-    innerBoxes[i].style.backgroundColor = generateColor();
+  for (let i = 0; i < insideBoxes.length; i++) {
+    insideBoxes[i].style.backgroundColor = generateColor();
   }
 }
 
 btnEL.addEventListener("click", changeBackgroundColor);
+
+// function generateBoxes(boxEL) {
+//   console.log("boxes created");
+// }
+
+// generateBoxes();
+
+// document.querySelector("btn2").addEventListener("click", generateBoxes){
+//   const container2 = document.querySelector('.container2');
+//   const newBox = document.createElement('div');
+//   newBox.classList.add('inside-box');
+//   container2.appendChild(newBox);
+// };
+
+// addbox
+
+// const addBtn = document.getElementsByClassName("btn2");
+// console.log(addBtn);
+
+// addBtn.addEventListener("click", function () {
+//   // ------- ------------//
+//   const newBox = document.createElement("div");
+//   newBox.className = "box";
+//   const parent = document.getElementsByClassName("box2"[0]);
+//   parent.appentChild(newBox);
+// });
+
+// audio
+
+const playBtn = document.getElementsByClassName("playBtn");
+playBtn.addEventListener("click", () => {
+  // play song
+  const audio = document.getElementTagName("audio"[0]);
+  audio.play();
+  console.log("AUD", audio);
+});

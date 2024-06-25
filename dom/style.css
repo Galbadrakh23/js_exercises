@@ -8,20 +8,47 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 1px;
+  gap: 5px;
   width: 300px;
   height: 300px;
   margin-bottom: 20px;
 }
 
-.inner-box {
+.inside-box {
   width: 100%;
   height: 100%;
-  background-color: lightgray;
+  background-color: skyblue;
+  border-radius: 15px;
 }
 
 .btn {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.btn2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.box2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.innner-box {
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  border-radius: 15px;
 }
